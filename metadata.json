@@ -1,0 +1,6 @@
+{
+  "name": "Priority-Based Emergency Message Scheduling Simulator",
+  "description": "CNS Minor Project simulation evaluating Priority-Based Scheduling vs FIFO for emergency ambulance and normal user messages over a shared communication channel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

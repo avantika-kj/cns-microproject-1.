@@ -7,14 +7,12 @@
 
 ## 1. Project Overview
 
-In a shared communication network (e.g., cellular uplink or public safety radio channel), messages from normal users and emergency ambulances contend for the exact same transmission medium. 
+In a shared communication network, normal users and emergency ambulances contend for the exact same transmission medium. 
 
 Under standard **FIFO (First-In, First-Out)** scheduling, critical ambulance telemetry can be stuck in a buffer queue behind long, non-critical user packets. This project implements a **3-tier Priority Queueing system**:
 - 🔴 **Priority 1 (Critical Ambulance):** Patient vitals, cardiac alerts, stroke notifications.
 - 🟡 **Priority 2 (Non-critical Ambulance):** Routine vehicular status, GPS updates, logistics.
 - 🔵 **Priority 3 (Normal User):** Standard background web traffic.
-
-The simulator proves that Priority Scheduling significantly suppresses queuing delay for life-critical packets without altering physical channel bandwidth.
 
 ---
 
@@ -47,7 +45,7 @@ project/
 - Python 3.8 or higher
 - `pip` package manager
 
-### Step 1: Clone or navigate to the project directory
+### Step 1: Navigate to the project directory
 ```bash
 cd project
 ```
